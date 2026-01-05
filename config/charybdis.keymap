@@ -83,7 +83,7 @@
 &kp TAB     &kp Q  &kp W        &kp E         &kp R              &kp T             &kp Y      &kp U         &kp I                 &kp O        &kp P          &kp BACKSLASH
 &kp ESCAPE  &kp A  &hml LGUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &hml_layer 2 G    &kp H      &hmr RSHFT J  &hmr RIGHT_CONTROL K  &hmr RGUI L  &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp GRAVE   &kp Z  &kp X        &kp C         &kp V              &kp B             &kp N      &kp M         &kp COMMA             &kp PERIOD   &kp SLASH      &mkp LCLK
-                                &mo 3         &kp BACKSPACE      &mo 1             &kp ENTER  &kp SPACE
+                                &mo 4         &kp BACKSPACE      &mo 1             &kp ENTER  &kp SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -104,6 +104,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans
                         &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &mo 2     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans     &trans     &trans    &trans  &trans
             >;
         };
 
