@@ -78,7 +78,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        default {
             bindings = <
 &kp TAB     &kp Q  &kp W        &kp E         &kp R              &kp T             &kp Y      &kp U         &kp I                 &kp O        &kp P          &kp BACKSLASH
 &kp ESCAPE  &kp A  &hml LGUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &hml_layer 2 G    &kp H      &hmr RSHFT J  &hmr RIGHT_CONTROL K  &hmr RGUI L  &kp SEMICOLON  &kp SINGLE_QUOTE
@@ -89,7 +89,7 @@
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        layer_1 {
+        sym {
             bindings = <
 &trans  &trans  &trans    &kp UP_ARROW  &trans     &kp HASH       &kp EQUAL        &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET     &trans
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp DOLLAR     &kp PLUS         &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK  &trans
@@ -98,7 +98,7 @@
             >;
         };
 
-        layer_4 {
+        num {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
@@ -107,7 +107,7 @@
             >;
         };
 
-        layer_4 {
+        mouse {
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &mo 2     &trans  &trans  &trans  &trans  &trans  &trans
@@ -116,7 +116,7 @@
             >;
         };
 
-        layer_3 {
+        bt {
             bindings = <
 &trans      &trans        &trans        &trans        &trans        &trans    &trans  &trans          &trans  &trans  &trans  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans
